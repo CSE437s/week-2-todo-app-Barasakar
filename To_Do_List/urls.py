@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("app/", include("app.urls")),
     path("", app_views.renderLoginPage, name="login_page"),
+    path("add_task/", app_views.add_task, name="add_task"),
 ]
